@@ -1,11 +1,11 @@
 .app {
+  margin-bottom: 50px;
   &__intro {
     background: url('./assets/cover.svg');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
   }
   &__logo {
     display: block;
@@ -58,6 +58,33 @@
       background-color: turquoise;
       color: white;
       transition: 0.3s;
+    }
+  }
+  &__sellingpoints {
+    margin-top: 50px;
+    column-count: 3;
+    @media only screen and (max-width: 400px) {
+      column-count: 1;
+    }
+  }
+
+  &__sellingpoint {
+    padding: 30px;
+    &--icon {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+      margin-bottom: 30px;
+      @media only screen and (max-width: 100px) {
+        width: 100%;
+      }
+    }
+    &--desc {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
     }
   }
 }
