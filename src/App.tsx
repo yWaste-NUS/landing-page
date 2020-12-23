@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AppLogo from 'assets/RGBLogo.png';
+import Showcase from 'assets/Showcase.svg';
+import './App.scss';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="app__intro">
+        <img className="app__logo" src={AppLogo} alt="AppLogo" />
+        <div className="app__title">YWaste</div>
+        <div className="app__subtitle">
+          A Simple Solution To Managing Food Waste
+        </div>
+        <button className="app__trynow">Try Now</button>
+        <img className="app__showcase" src={Showcase} alt="Showcase" />
+      </div>
     </div>
   );
 };

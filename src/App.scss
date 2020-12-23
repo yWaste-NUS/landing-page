@@ -1,0 +1,63 @@
+.app {
+  &__intro {
+    background: url('./assets/cover.svg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    width: 70px;
+    @media only screen and (max-width: 400px) {
+      width: 20%;
+    }
+  }
+  &__title {
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  &__subtitle {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  &__showcase {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    width: 600px;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  &__trynow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid turquoise;
+    font-size: 18px;
+    transition: 0.3s;
+    @media only screen and (max-width: 100px) {
+      width: 100%;
+    }
+    &:hover {
+      background-color: turquoise;
+      color: white;
+      transition: 0.3s;
+    }
+  }
+}
