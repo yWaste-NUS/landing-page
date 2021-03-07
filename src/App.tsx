@@ -1,10 +1,8 @@
 import React from 'react';
 import AppLogo from 'assets/RGBLogo.png';
-import Showcase from 'assets/Showcase.svg';
 import ScanReceipt from 'assets/ScanReceipt.png';
 import Tracking from 'assets/Tracking.svg';
 import Reminder from 'assets/Reminder.png';
-import NUS from 'assets/NUS.jpg';
 import './App.scss';
 
 const App: React.FC = () => {
@@ -18,7 +16,6 @@ const App: React.FC = () => {
             A Simple Solution To Managing Food Waste
           </div>
           <button className="app__trynow">Try Now</button>
-          <img className="app__showcase" src={Showcase} alt="Showcase" />
         </div>
         <div className="app__sellingpoints">
           <div className="app__sellingpoint">
@@ -51,11 +48,6 @@ const App: React.FC = () => {
               Track food inventory conveniently
             </div>
           </div>
-        </div>
-        <div>
-          <hr className="app__divider" />
-          <img className="app__partners" src={NUS} alt="NUS" />
-          <hr className="app__divider" />
         </div>
       </div>
       <div className="app__footer">
